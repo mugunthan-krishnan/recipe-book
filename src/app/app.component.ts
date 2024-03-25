@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe-project';
+  loadedFeature = 'recipe';
+  onNavigate(feature: string){
+    this.loadedFeature = feature;
+  }
+  oddNumbers = [1,3,5];
+  evenNumbers = [2,4,6];
 }
